@@ -13,4 +13,4 @@ with open("NAMES-AND-GWA-LIST.txt") as input_file, open("ARANGED-LIST.txt", "a")
     sorted_gwa = sorted(name_gwa.items(), key = lambda x:x[1])
     print(sorted_gwa)
 # Output the name with higest gwa and the higest gwa.
-
+    print("\nThe student with the higest GWA is:", sorted_gwa[0][0] + "\n" + "The higest GWA is:", sorted_gwa[0][1])
