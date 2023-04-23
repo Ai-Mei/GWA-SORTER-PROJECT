@@ -9,7 +9,8 @@ with open("NAMES-AND-GWA-LIST.txt") as input_file, open("ARANGED-LIST.txt", "a")
         # Store the key-value pairs in the name_gwa dictioanry 
         name_gwa[name] = gwa
 
-    print(name_gwa)
 # Sort the dictionary from highest to lowest gwa.
+    sorted_gwa = sorted(name_gwa.items(), key = lambda x:x[1])
+    print(sorted_gwa)
 # Output the name with higest gwa and the higest gwa.
 
